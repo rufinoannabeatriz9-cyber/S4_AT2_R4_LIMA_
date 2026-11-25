@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    color: #222;
+}
+
+/* menu */
+nav {
+    background-color: #0f2f52;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* inicio */
+.inicio {
+    background-color: #1d5a9e;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.inicio h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.inicio h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: white;
+    color: #0f2f52;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* secoes */
+main section {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+main section h2 {
+    color: #0f2f52;
+    margin-bottom: 10px;
+}
+
+main section h3 {
+    color: #0f2f52;
+    margin: 15px 0 8px;
+}
+
+/* categorias */
+.categorias ul {
+    list-style: none;
+    text-align: center;
+}
+
+.categorias li {
+    display: inline-block;
+    margin: 8px;
+}
+
+.categorias a {
+    display: block;
+    background-color: #dce9f7;
+    color: #0f2f52;
+    text-decoration: none;
+    padding: 10px 18px;
+}
+
+/* produtos */
+.roupas ul,
+.calcados ul,
+.acessorios ul,
+.equipamentos ul,
+.produtos ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.roupas li,
+.calcados li,
+.acessorios li,
+.equipamentos li,
+.produtos li {
+    border: 1px solid #ccd6e0;
+    padding: 10px;
+    text-align: center;
+}
+
+main section img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+/* listas */
+.listas ul,
+.listas ol {
+    margin: 10px 0 10px 25px;
+}
+
+.listas dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.listas dd {
+    margin-left: 20px;
+}
+
+/* tabela */
+.catalogo {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0f2f52;
+    color: white;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ccd6e0;
+    text-align: center;
+}
+
+/* rodape */
+footer {
+    background-color: #0f2f52;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+    .roupas ul,
+    .calcados ul,
+    .acessorios ul,
+    .equipamentos ul,
+    .produtos ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
